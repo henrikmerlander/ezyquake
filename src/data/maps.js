@@ -440,7 +440,7 @@ export default [
   },
   {
     key: 'hektik',
-    name: 'hektik',
+    name: 'Hektik',
     tags: [
       'duel',
       'tourney',
