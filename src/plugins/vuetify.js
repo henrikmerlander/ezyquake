@@ -3,6 +3,7 @@ import {
   Vuetify,
   VApp,
   VBtn,
+  VCard,
   VGrid,
   VImg,
   VRadioGroup,
@@ -14,6 +15,7 @@ Vue.use(Vuetify, {
   components: {
     VApp,
     VBtn,
+    VCard,
     VGrid,
     VImg,
     VRadioGroup,
