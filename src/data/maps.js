@@ -256,7 +256,7 @@ export default [
   },
   {
     key: 'bloodrun',
-    name: 'Blood Run Tourney by ZTN',
+    name: 'Blood Run',
     tags: ['ffa', 'tourney', 'tdm', 'ca', 'stock', 'former q3 custom'],
   },
   {
