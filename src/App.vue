@@ -1,9 +1,12 @@
 <template>
-  <div id="app">
-    <img alt="Quake Live logo" src="./assets/logo.png">
-    <h1>ezyquake</h1>
-    <RandomMap />
-  </div>
+  <v-app id="app">
+    <v-toolbar app><v-toolbar-title>ezyquake</v-toolbar-title></v-toolbar>
+    <v-content>
+      <v-container fluid>
+        <RandomMap />
+      </v-container>
+    </v-content>
+  </v-app>
 </template>
 
 <script>

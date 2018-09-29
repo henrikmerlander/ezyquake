@@ -1,33 +1,21 @@
 <template>
   <div>
     <form v-on:submit.prevent="randomize">
-      <div class="gametype">
-        <label>
-          <input v-model="gametype" type="radio" name="gametype" value="" />
-          All
-        </label>
-        <label>
-          <input v-model="gametype" type="radio" name="gametype" value="ca" />
-          Clan Arena
-        </label>
-        <label>
-          <input v-model="gametype" type="radio" name="gametype" value="ffa" />
-          Free For All
-        </label>
-        <label>
-          <input v-model="gametype" type="radio" name="gametype" value="ctf" />
-          Capture The Flag
-        </label>
-        <label>
-          <input v-model="gametype" type="radio" name="gametype" value="duel" />
-          Duel
-        </label>
-      </div>
-      <button type="submit">Randomize</button>
+      <v-layout column align-center>
+        <v-radio-group v-model="gametype">
+          <p>Game Type</p>
+          <v-radio label="All" value=""></v-radio>
+          <v-radio label="Clan Arena" value="ca"></v-radio>
+          <v-radio label="Free For All" value="ffa"></v-radio>
+          <v-radio label="Capture The Flag" value="ctf"></v-radio>
+          <v-radio label="Duel" value="duel"></v-radio>
+        </v-radio-group>
+      </v-layout>
+      <v-btn type="submit">Randomize</v-btn>
     </form>
     <template v-if="randomMap">
       <h2>{{ randomMap.name }}</h2>
-      <img :src="'http://epsy46.free.fr/qlmaps/levelshots/' + randomMap.key + '.jpg'" />
+      <v-img contain :max-height="500" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + randomMap.key + '.jpg'" />
     </template>
   </div>
 </template>
@@ -54,24 +42,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.gametype {
-  text-align: left;
-}
-
-label {
-  display: block;
-  margin: 5px;
-}
-
-img {
-  max-width: 100%;
-}
-</style>
