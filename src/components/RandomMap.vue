@@ -26,7 +26,7 @@
       <button type="submit">Randomize</button>
     </form>
     <template v-if="randomMap">
-      <p>{{ randomMap.name }}</p>
+      <h2>{{ randomMap.name }}</h2>
       <img :src="'http://epsy46.free.fr/qlmaps/levelshots/' + randomMap.key + '.jpg'" />
     </template>
   </div>
