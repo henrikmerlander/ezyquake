@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img alt="Quake Live logo" src="./assets/logo.png">
+    <h1>ezyquake</h1>
     <RandomMap />
   </div>
 </template>
