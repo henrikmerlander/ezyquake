@@ -26,7 +26,7 @@
             </v-container>
           </v-img>
           <v-card-title>
-            <v-chip label small :outline="true" v-for="tag in randomMap.tags" :key=tag>{{ tag }}</v-chip>
+            <v-chip label small :outline="true" v-for="tag in randomMap.tags" :key="tag">{{ tag }}</v-chip>
           </v-card-title>
         </v-card>
       </v-dialog-transition>
