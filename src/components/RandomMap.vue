@@ -15,7 +15,7 @@
     </v-flex>
     <v-flex xs12 sm6>
       <v-card class="random-map" v-if="randomMap" max-width="500">
-        <v-img class="white--text" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + randomMap.key + '.jpg'">
+        <v-img class="white--text" :height="500" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + randomMap.key + '.jpg'">
           <v-container fill-height fluid>
             <v-layout fill-height>
               <v-flex xs12 align-end flexbox>
