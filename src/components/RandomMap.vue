@@ -40,7 +40,7 @@ import maps from '@/data/maps'
 export default {
   data() {
     return {
-      gameType: 'ca',
+      gameType: 'all',
       randomMap: '',
     }
   },
