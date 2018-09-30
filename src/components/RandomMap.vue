@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <v-layout column align-center>
+  <v-layout row wrap>
+    <v-flex xs12 sm6>
       <form v-on:submit.prevent="randomize">
         <v-radio-group v-model="gametype">
           <p>Game Type</p>
@@ -12,22 +12,24 @@
         </v-radio-group>
         <v-btn type="submit">Randomize</v-btn>
       </form>
-    </v-layout>
-    <v-card class="random-map" v-if="randomMap" max-width="500">
-      <v-img class="white--text" max-height="500px" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + randomMap.key + '.jpg'">
-        <v-container fill-height fluid>
-          <v-layout fill-height>
-            <v-flex xs12 align-end flexbox>
-              <span class="headline">{{ randomMap.name }}</span>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-img>
-      <v-card-title>
-        <span class="tag" v-for="tag in randomMap.tags" :key=tag>[{{ tag }}]</span>
-      </v-card-title>
-    </v-card>
-  </div>
+    </v-flex>
+    <v-flex xs12 sm6>
+      <v-card class="random-map" v-if="randomMap" max-width="500">
+        <v-img class="white--text" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + randomMap.key + '.jpg'">
+          <v-container fill-height fluid>
+            <v-layout fill-height>
+              <v-flex xs12 align-end flexbox>
+                <span class="headline">{{ randomMap.name }}</span>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-img>
+        <v-card-title>
+          <span class="tag" v-for="tag in randomMap.tags" :key=tag>[{{ tag }}]</span>
+        </v-card-title>
+      </v-card>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
@@ -53,10 +55,6 @@ export default {
 }
 </script>
 <style>
-.random-map {
-  margin: 0 auto;
-}
-
 .tag {
   margin-right: 5px;
 }
