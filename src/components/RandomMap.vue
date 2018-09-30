@@ -47,7 +47,6 @@ export default {
   computed: {
     validMaps() {
       return maps
-        .filter(map => map !== this.randomMap)
         .filter(map => !map.tags.includes('custom'))
         .filter(map => this.gametype === '' || map.tags.includes(this.gametype))
     }
