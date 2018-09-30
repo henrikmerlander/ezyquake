@@ -2,7 +2,7 @@
   <v-layout row wrap>
     <v-flex xs12 sm6>
       <form v-on:submit.prevent="randomize">
-        <v-radio-group v-model="gametype">
+        <v-radio-group v-model="gameType">
           <p>Game Type</p>
           <v-radio label="All" value="all"></v-radio>
           <v-radio label="Clan Arena" value="ca"></v-radio>
@@ -40,7 +40,7 @@ import maps from '@/data/maps'
 export default {
   data() {
     return {
-      gametype: 'ca',
+      gameType: 'ca',
       randomMap: '',
     }
   },
@@ -49,7 +49,7 @@ export default {
       return maps
         .filter(map => !map.tags.includes('custom'))
         .filter(
-          map => this.gametype === 'all' || map.tags.includes(this.gametype),
+          map => this.gameType === 'all' || map.tags.includes(this.gameType),
         )
     },
   },
