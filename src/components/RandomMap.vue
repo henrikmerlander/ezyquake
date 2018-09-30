@@ -43,7 +43,7 @@ export default {
   methods: {
     randomize() {
       const validMaps = maps
-        .filter(map => map !== this.map)
+        .filter(map => map !== this.randomMap)
         .filter(map => !map.tags.includes('custom'))
         .filter(map => this.gametype === '' || map.tags.includes(this.gametype))
 
