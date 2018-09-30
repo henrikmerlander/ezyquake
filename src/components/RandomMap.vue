@@ -4,7 +4,7 @@
       <form v-on:submit.prevent="randomize">
         <v-radio-group v-model="gametype">
           <p>Game Type</p>
-          <v-radio label="All" value=""></v-radio>
+          <v-radio label="All" value="all"></v-radio>
           <v-radio label="Clan Arena" value="ca"></v-radio>
           <v-radio label="Free For All" value="ffa"></v-radio>
           <v-radio label="Capture The Flag" value="ctf"></v-radio>
@@ -48,7 +48,9 @@ export default {
     validMaps() {
       return maps
         .filter(map => !map.tags.includes('custom'))
-        .filter(map => this.gametype === '' || map.tags.includes(this.gametype))
+        .filter(
+          map => this.gametype === 'all' || map.tags.includes(this.gametype),
+        )
     },
   },
   methods: {
