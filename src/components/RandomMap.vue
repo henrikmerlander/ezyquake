@@ -49,17 +49,20 @@ export default {
       return maps
         .filter(map => !map.tags.includes('custom'))
         .filter(map => this.gametype === '' || map.tags.includes(this.gametype))
-    }
+    },
   },
   methods: {
     randomize() {
       const timeout = this.randomMap === '' ? 0 : 200
-      
+
       this.randomMap = ''
 
       setTimeout(
-        () => this.randomMap = this.validMaps[Math.floor(Math.random() * this.validMaps.length)], 
-        timeout
+        () =>
+          (this.randomMap = this.validMaps[
+            Math.floor(Math.random() * this.validMaps.length)
+          ]),
+        timeout,
       )
     },
   },
