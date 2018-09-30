@@ -53,11 +53,13 @@ export default {
   },
   methods: {
     randomize() {
+      const timeout = this.randomMap === '' ? 0 : 200
+      
       this.randomMap = ''
 
       setTimeout(
         () => this.randomMap = this.validMaps[Math.floor(Math.random() * this.validMaps.length)], 
-        200
+        timeout
       )
     },
   },
