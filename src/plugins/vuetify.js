@@ -8,6 +8,7 @@ import {
   VImg,
   VRadioGroup,
   VToolbar,
+  transitions,
 } from 'vuetify'
 import 'vuetify/src/stylus/app.styl'
 
@@ -20,6 +21,7 @@ Vue.use(Vuetify, {
     VImg,
     VRadioGroup,
     VToolbar,
+    transitions,
   },
   theme: {
     primary: '#B71C1C',

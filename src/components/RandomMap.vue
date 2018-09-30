@@ -14,20 +14,22 @@
       </form>
     </v-flex>
     <v-flex xs12 sm6>
-      <v-card class="random-map" v-if="randomMap" max-width="500">
-        <v-img class="white--text" :height="500" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + randomMap.key + '.jpg'">
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <span class="headline">{{ randomMap.name }}</span>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-img>
-        <v-card-title>
-          <span class="tag" v-for="tag in randomMap.tags" :key=tag>[{{ tag }}]</span>
-        </v-card-title>
-      </v-card>
+      <v-dialog-transition>
+        <v-card class="random-map" v-if="randomMap" max-width="500">
+          <v-img class="white--text" :height="500" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + randomMap.key + '.jpg'">
+            <v-container fill-height fluid>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <span class="headline">{{ randomMap.name }}</span>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
+          <v-card-title>
+            <span class="tag" v-for="tag in randomMap.tags" :key=tag>[{{ tag }}]</span>
+          </v-card-title>
+        </v-card>
+      </v-dialog-transition>
     </v-flex>
   </v-layout>
 </template>
@@ -44,12 +46,14 @@ export default {
   },
   methods: {
     randomize() {
+      this.randomMap = ''
+
       const validMaps = maps
         .filter(map => map !== this.randomMap)
         .filter(map => !map.tags.includes('custom'))
         .filter(map => this.gametype === '' || map.tags.includes(this.gametype))
 
-      this.randomMap = validMaps[Math.floor(Math.random() * validMaps.length)]
+      setTimeout(() => this.randomMap = validMaps[Math.floor(Math.random() * validMaps.length)], 200)
     },
   },
 }
