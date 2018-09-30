@@ -44,16 +44,22 @@ export default {
       randomMap: '',
     }
   },
+  computed: {
+    validMaps() {
+      return maps
+        .filter(map => map !== this.randomMap)
+        .filter(map => !map.tags.includes('custom'))
+        .filter(map => this.gametype === '' || map.tags.includes(this.gametype))
+    }
+  },
   methods: {
     randomize() {
       this.randomMap = ''
 
-      const validMaps = maps
-        .filter(map => map !== this.randomMap)
-        .filter(map => !map.tags.includes('custom'))
-        .filter(map => this.gametype === '' || map.tags.includes(this.gametype))
-
-      setTimeout(() => this.randomMap = validMaps[Math.floor(Math.random() * validMaps.length)], 200)
+      setTimeout(
+        () => this.randomMap = this.validMaps[Math.floor(Math.random() * this.validMaps.length)], 
+        200
+      )
     },
   },
 }
