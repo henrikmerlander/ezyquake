@@ -12,6 +12,7 @@
         </v-radio-group>
         <v-btn type="submit">Randomize</v-btn>
       </form>
+      <p>Some maps are only available in the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=539421606">Quake Live Extras Pack</a></p>
     </v-flex>
     <v-flex xs12 sm6>
       <v-dialog-transition>
