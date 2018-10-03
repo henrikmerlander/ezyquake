@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md>
     <v-layout row wrap>
-      <v-flex xs12 sm6 lg4 class="map" flex v-for="(map, index) in maps" :key="index">
+      <v-flex xs12 sm6 lg4 xl3 class="map" flex v-for="(map, index) in maps" :key="index">
         <Map :map="map" />
       </v-flex>
     </v-layout>
