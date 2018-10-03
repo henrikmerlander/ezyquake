@@ -9,7 +9,7 @@
     </v-toolbar>
     <v-content>
       <v-container fluid>
-        <RandomMap />
+        <router-view></router-view>
       </v-container>
     </v-content>
   </v-app>
