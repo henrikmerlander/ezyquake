@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import RandomMap from '@/views/RandomMap.vue'
+import Randomizer from '@/views/Randomizer.vue'
 
 Vue.use(Router)
 
@@ -15,7 +15,7 @@ export default new Router({
     {
       path: '/randomizer',
       name: 'randomizer',
-      component: RandomMap,
+      component: Randomizer,
     },
     {
       path: '/maps',
