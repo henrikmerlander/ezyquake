@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import RandomMap from '@/components/RandomMap.vue';
+import RandomMap from '@/views/RandomMap.vue';
 
 Vue.use(Router);
 

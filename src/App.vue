@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import RandomMap from './components/RandomMap.vue'
+import RandomMap from '@/views/RandomMap.vue'
 
 export default {
   name: 'app',
