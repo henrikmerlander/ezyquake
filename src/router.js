@@ -17,5 +17,11 @@ export default new Router({
       name: 'randomizer',
       component: RandomMap,
     },
+    {
+      path: '/maps',
+      name: 'maps',
+      component: () =>
+        import(/* webpackChunkName: "maps" */ '@/views/Maps.vue'),
+    },
   ],
 })
