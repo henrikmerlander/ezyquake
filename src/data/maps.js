@@ -485,46 +485,4 @@ export default [
     name: 'Industrial Accident',
     tags: ['ctf', 'stock', 'former q3 custom', 'from 3w', 'premium'],
   },
-  {
-    key: 'atomicoz_box',
-    name: 'The phantom of the box, where is it? by atomicoz',
-    tags: ['run', 'custom'],
-    url: 'http://www.quakelive.com/forum/showthread.php?t=40951',
-  },
-  {
-    key: 'count_control',
-    name: 'Control By GrafZhL',
-    tags: ['practice', 'custom'],
-    url: 'http://www.quakelive.com/forum/showthread.php?t=39163',
-  },
-  {
-    key: 'count_qltrain',
-    name: 'strafe train by GrafZhL',
-    tags: ['practice', 'custom'],
-    url: 'http://www.quakelive.com/forum/showthread.php?t=38903',
-  },
-  {
-    key: 'count_reactors',
-    name: 'reactors by GrafZhL',
-    tags: ['run', 'custom'],
-    url: 'http://www.quakelive.com/forum/showthread.php?t=39097',
-  },
-  {
-    key: 'raztrainql_beta3',
-    name: "RAZ3R's Training Map",
-    tags: ['practice', 'custom'],
-    url: 'http://www.quakelive.com/forum/showthread.php?t=18447',
-  },
-  {
-    key: 'qzteam666',
-    name: 'Hall Of Doom',
-    tags: ['ctf', 'custom'],
-    url: 'http://www.quakelive.com/forum/showpost.php?p=227579',
-  },
-  {
-    key: 'spz_train1',
-    name: 'Strafe Training by sprks',
-    tags: ['run', 'custom'],
-    url: 'http://www.quakelive.com/forum/showthread.php?t=25772',
-  },
 ]
