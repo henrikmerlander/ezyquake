@@ -1,7 +1,7 @@
 <template>
   <v-dialog-transition>
     <v-card class="random-map" v-if="map" max-width="500">
-      <v-img class="white--text" :height="500" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + map.key + '.jpg'">
+      <v-img class="white--text" :height="400" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + map.key + '.jpg'">
       <v-container fill-height fluid>
         <v-layout fill-height>
           <v-flex xs12 align-end flexbox>
