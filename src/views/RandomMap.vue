@@ -36,9 +36,9 @@ export default {
   },
   computed: {
     validMaps() {
-      return maps.filter(
-        map => this.gameType === 'all' || map.tags.includes(this.gameType),
-      )
+      return this.gameType === 'all'
+        ? maps
+        : maps.filter(map => map.tags.includes(this.gameType))
     },
   },
   methods: {
