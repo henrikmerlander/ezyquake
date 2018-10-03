@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap>
     <v-flex xs12 sm6>
-      <form v-on:submit.prevent="randomize">
+      <form @submit.prevent="randomize">
         <v-radio-group v-model="gameType">
           <p>Game Type</p>
           <v-radio label="All" value="all"></v-radio>
