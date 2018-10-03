@@ -18,14 +18,3 @@
     </v-content>
   </v-app>
 </template>
-
-<script>
-import RandomMap from '@/views/RandomMap.vue'
-
-export default {
-  name: 'app',
-  components: {
-    RandomMap,
-  },
-}
-</script>
