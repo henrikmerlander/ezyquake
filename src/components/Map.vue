@@ -1,9 +1,9 @@
 <template>
   <v-card max-width="500">
     <v-img class="white--text" :height="400" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + map.key + '.jpg'">
-    <v-container fill-height fluid>
-      <v-layout fill-height>
-        <v-flex xs12 align-end flexbox>
+    <v-container>
+      <v-layout>
+        <v-flex>
           <span class="headline">{{ map.name }}</span>
         </v-flex>
       </v-layout>
