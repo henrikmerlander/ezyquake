@@ -1,6 +1,6 @@
 <template>
   <v-container grid-list-md>
-    <v-text-field v-model="searchTerm" clearable label="Map name"></v-text-field>
+    <v-text-field v-model="searchTerm" clearable :placeholder="placeholder"></v-text-field>
     <v-layout row wrap>
       <v-flex xs12 sm6 lg4 xl3 class="map" flex v-for="(map, index) in maps" :key="index">
         <Map :map="map" />
@@ -19,8 +19,14 @@ export default {
   },
   data() {
     return {
+      placeholder: 'Campgrounds...',
       searchTerm: '',
     }
+  },
+  created() {
+    setInterval(() => {
+      this.placeholder = maps[Math.floor(Math.random() * maps.length)].name + '...'
+    }, 1300);
   },
   computed: {
     maps() {
