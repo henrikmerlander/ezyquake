@@ -15,7 +15,9 @@
       <p>Some maps are only available in the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=539421606">Quake Live Extras Pack</a></p>
     </v-flex>
     <v-flex xs12 sm6>
-      <Map :map="randomMap" />
+      <v-dialog-transition>
+        <Map v-if="randomMap" :map="randomMap" />
+      </v-dialog-transition>
     </v-flex>
   </v-layout>
 </template>

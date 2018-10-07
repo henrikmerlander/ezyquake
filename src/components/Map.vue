@@ -1,20 +1,18 @@
 <template>
-  <v-dialog-transition>
-    <v-card v-if="map" max-width="500">
-      <v-img class="white--text" :height="400" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + map.key + '.jpg'">
-      <v-container fill-height fluid>
-        <v-layout fill-height>
-          <v-flex xs12 align-end flexbox>
-            <span class="headline">{{ map.name }}</span>
-          </v-flex>
-        </v-layout>
-      </v-container>
-      </v-img>
-      <v-card-title>
-        <v-chip label small disabled outline v-for="tag in map.tags" :key="tag">{{ tag }}</v-chip>
-      </v-card-title>
-    </v-card>
-  </v-dialog-transition>
+  <v-card max-width="500">
+    <v-img class="white--text" :height="400" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + map.key + '.jpg'">
+    <v-container fill-height fluid>
+      <v-layout fill-height>
+        <v-flex xs12 align-end flexbox>
+          <span class="headline">{{ map.name }}</span>
+        </v-flex>
+      </v-layout>
+    </v-container>
+    </v-img>
+    <v-card-title>
+      <v-chip label small disabled outline v-for="tag in map.tags" :key="tag">{{ tag }}</v-chip>
+    </v-card-title>
+  </v-card>
 </template>
 
 <script>
