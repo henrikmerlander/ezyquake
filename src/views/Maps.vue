@@ -1,5 +1,6 @@
 <template>
   <v-container grid-list-md>
+    <v-text-field v-model="searchTerm" clearable label="Map name"></v-text-field>
     <v-layout row wrap>
       <v-flex xs12 sm6 lg4 xl3 class="map" flex v-for="(map, index) in maps" :key="index">
         <Map :map="map" />
@@ -18,8 +19,18 @@ export default {
   },
   data() {
     return {
-      maps: maps.sort((a, b) => a.name.localeCompare(b.name)),
+      searchTerm: '',
     }
+  },
+  computed: {
+    maps() {
+      const validMaps = this.searchTerm
+        ? maps.filter(map =>
+            map.name.toLowerCase().includes(this.searchTerm.toLowerCase()),
+          )
+        : maps
+      return validMaps.sort((a, b) => a.name.localeCompare(b.name))
+    },
   },
 }
 </script>

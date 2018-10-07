@@ -8,6 +8,7 @@ import {
   VGrid,
   VImg,
   VRadioGroup,
+  VTextField,
   VToolbar,
   transitions,
 } from 'vuetify'
@@ -22,6 +23,7 @@ Vue.use(Vuetify, {
     VGrid,
     VImg,
     VRadioGroup,
+    VTextField,
     VToolbar,
     transitions,
   },
