@@ -2,7 +2,7 @@
   <v-container grid-list-md>
     <v-text-field v-model="searchTerm" clearable :placeholder="placeholder"></v-text-field>
     <v-layout row wrap>
-      <v-flex xs12 sm6 lg4 xl3 class="map" flex v-for="(map, index) in maps" :key="index">
+      <v-flex xs12 sm6 lg4 xl3 v-for="(map, index) in maps" :key="index">
         <Map :map="map" />
       </v-flex>
     </v-layout>
