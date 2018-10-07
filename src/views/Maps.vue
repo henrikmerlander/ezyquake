@@ -19,14 +19,13 @@ export default {
   },
   data() {
     return {
-      placeholder: 'Campgrounds...',
+      placeholder: '',
       searchTerm: '',
     }
   },
   created() {
-    setInterval(() => {
-      this.placeholder = maps[Math.floor(Math.random() * maps.length)].name + '...'
-    }, 1300);
+    this.setPlaceholder()
+    setInterval(() => this.setPlaceholder(), 1300)
   },
   computed: {
     maps() {
@@ -36,6 +35,12 @@ export default {
           )
         : maps
       return validMaps.sort((a, b) => a.name.localeCompare(b.name))
+    },
+  },
+  methods: {
+    setPlaceholder() {
+      this.placeholder =
+        maps[Math.floor(Math.random() * maps.length)].name + '...'
     },
   },
 }
