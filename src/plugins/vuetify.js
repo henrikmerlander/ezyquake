@@ -28,9 +28,9 @@ Vue.use(Vuetify, {
     transitions,
   },
   theme: {
-    primary: '#B71C1C',
+    primary: '#ffab00',
     secondary: '#000000',
-    accent: '#B71C1C',
+    accent: '#ffab00',
     error: '#f44336',
     warning: '#ffeb3b',
     info: '#2196f3',
