@@ -10,7 +10,7 @@
           <v-radio label="Capture The Flag" value="ctf"></v-radio>
           <v-radio label="Duel" value="duel"></v-radio>
         </v-radio-group>
-        <v-btn type="submit">Randomize</v-btn>
+        <v-btn large type="submit">Randomize</v-btn>
       </form>
       <p>Some maps are only available in the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=539421606">Quake Live Extras Pack</a></p>
     </v-flex>
