@@ -485,4 +485,19 @@ export default [
     name: 'Industrial Accident',
     tags: ['ctf', 'stock', 'former q3 custom', 'from 3w', 'premium'],
   },
+  {
+    key: 'wargrounds',
+    name: 'Wargrounds',
+    tags: ['ffa', 'tdm', 'ca', 'stock'],
+  },
+  {
+    key: 'warehouse',
+    name: 'Warehouse',
+    tags: ['ffa', 'tdm', 'ca', 'stock'],
+  },
+  {
+    key: 'theoldendomain',
+    name: 'The Olden Domain',
+    tags: ['ffa', 'tdm', 'ca', 'stock'],
+  },
 ]
