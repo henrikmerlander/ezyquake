@@ -488,16 +488,19 @@ export default [
   {
     key: 'wargrounds',
     name: 'Wargrounds',
+    image: 'https://shadowsdomain.files.wordpress.com/2011/07/ql_wargrounds_01.jpg',
     tags: ['ffa', 'tdm', 'ca', 'stock'],
   },
   {
     key: 'warehouse',
     name: 'Warehouse',
+    image: 'https://i.ytimg.com/vi/OnIlFQwIc4U/maxresdefault.jpg',
     tags: ['ffa', 'tdm', 'ca', 'stock'],
   },
   {
     key: 'theoldendomain',
     name: 'The Olden Domain',
+    image: 'https://i.ytimg.com/vi/2O-N4iWKeig/maxresdefault.jpg',
     tags: ['ffa', 'tdm', 'ca', 'stock'],
   },
 ]
