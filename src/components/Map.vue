@@ -1,6 +1,6 @@
 <template>
   <v-card max-width="500">
-    <v-img class="white--text" :height="400" :src="'http://epsy46.free.fr/qlmaps/levelshots/' + map.key + '.jpg'">
+    <v-img class="white--text" :height="400" :src="map.image || 'http://epsy46.free.fr/qlmaps/levelshots/' + map.key + '.jpg'">
       <v-container>
         <v-layout>
           <v-flex>
