@@ -7,7 +7,7 @@
         <v-btn href="steam://rungameid/282440" flat>Play Quake Live</v-btn>
       </v-toolbar-items>
       <v-toolbar-items slot="extension">
-        <v-btn to="/randomizer" flat>Randomizer</v-btn>
+        <v-btn to="/" flat>Randomizer</v-btn>
         <v-btn to="/maps" flat>Maps</v-btn>
       </v-toolbar-items>
     </v-toolbar>

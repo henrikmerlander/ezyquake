@@ -10,10 +10,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/randomizer',
-    },
-    {
-      path: '/randomizer',
       name: 'randomizer',
       component: Randomizer,
     },
