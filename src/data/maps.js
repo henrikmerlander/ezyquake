@@ -373,4 +373,43 @@ export default [
     image: 'https://i.ytimg.com/vi/2O-N4iWKeig/maxresdefault.jpg',
     tags: ['ffa', 'tdm', 'ca', 'stock'],
   },
+  {
+    key: 'devilish',
+    name: 'Devilish',
+    image: 'https://lvlworld.com/levels/storm3tourney8/storm3tourney8lg.jpg',
+    tags: ['ffa', 'tdm', 'ca', 'stock'],
+  },
+  {
+    key: 'bitterembrace',
+    name: 'Bitter Embrace',
+    image: 'https://lvlworld.com/levels/mrcq3t6/mrcq3t6lg.jpg',
+    tags: ['ffa', 'tdm', 'ca', 'stock'],
+  },
+  {
+    key: 'gothicrage',
+    name: 'Gothic Rage',
+    image:
+      'http://www.esreality.com/files/placeimages/2010/79239-gothicrage.jpg',
+    tags: ['ffa', 'tdm', 'ca', 'stock'],
+  },
+  {
+    key: 'corrosion',
+    name: 'Corrosion',
+    image:
+      'https://lvlworld.com/levels/phantq3dm3_rev/213112922825223238lg.jpg',
+    tags: ['ffa', 'tdm', 'ca', 'stock'],
+  },
+  {
+    key: 'mcsarges',
+    name: "McSarge's",
+    image:
+      'https://lvlworld.com/levels/ct3tourney3_final/ct3tourney3_final800x600.jpg',
+    tags: ['ffa', 'tdm', 'ca', 'stock'],
+  },
+  {
+    key: 'monastery',
+    name: 'Monastery',
+    image: 'https://i.ytimg.com/vi/5UPMBD4gj4w/hqdefault.jpg',
+    tags: ['ffa', 'tdm', 'ca', 'stock'],
+  },
 ]
